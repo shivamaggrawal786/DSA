@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+    static int lcm(int a, int b){
+        int res;
+        if(a>b){
+            res = a;
+        }
+        else{
+            res = b;
+        }
+        while(true){
+            if(res%a==0 && res%b==0){
+                break;
+            }
+            res+=1;
+        }
+        return res;
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int lcm = lcm(a,b);
+		System.out.println(lcm);
+	}
+}
