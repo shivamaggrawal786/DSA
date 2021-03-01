@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main
+{
+    static boolean isPalindrome(int n){
+        int n1 = n;
+        int rev = 0;
+        while(n1!=0){
+            rev=rev*10+n1%10;
+            n1=n1/10;
+        }
+        return n==rev;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        boolean result = isPalindrome(n);
+        System.out.println(result);
+    }
+}
