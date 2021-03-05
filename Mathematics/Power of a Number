@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+    static int pow(int x, int y){
+        int z=1;
+        for(int i=1;i<=y;i++){
+            z*=x;
+        }
+        return z;
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		System.out.println(pow(x,y));
+	}
+}
