@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 15;
+		int result;
+		result = a&b;
+		System.out.println("AND operation : "+ result);
+		result = a|b;
+		System.out.println("OR operation : "+ result);
+		result = a^b;
+		System.out.println("XOR operation : "+ result);
+	}
+}
